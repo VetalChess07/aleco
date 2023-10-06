@@ -22,7 +22,7 @@
                 ALEKO SHOW
               </a>
             </li>
-            <li  data-aos-duration="2500"  data-aos="flip-left" class="intro__item-li">
+            <li  data-aos-duration="2500"  data-aos="fade-up" class="intro__item-li">
               <a href="" class="intro__item-link">
                 PODCAST FOR  WOMAN
               </a>
@@ -99,8 +99,9 @@
             с разными брендами и блоггерами.  Алеко очень классный 
             вот он сотрудничает с разными брендами и блоггерами. Алеко очень классный вот он сотрудничает с разными брендами и блоггерами. Алеко очень классный вот он сотрудничает с разными брендами и блоггерами. 
           </p>
+          
         </div>
-        <div data-aos="flip-right" data-aos-duration="1500"  class="about-us__item">
+        <div data-aos="fade-left" data-aos-duration="1500"  class="about-us__item">
           <img src="./img/intro__img.jpg" alt="" class="about-us__item-img">
         </div>
       </div>
@@ -111,29 +112,62 @@
           СТАТИСТИКА
         </h2>
         <div data-aos-duration="2200" class="statistics__inner">
-          <div  data-aos="fade-right"   class="statistics__item">
-            <h3 id="statistics__instagram" class="statistics__item-title"></h3><span class="statistics__item-span">M</span>
-            <p class="statistics__item-text">INSTAGRAM</p>
+          <div class="statistics__item">
+            <div class="statistics__block">
+              <h3 id="statistics__instagram" class="statistics__block-title">105</h3>
+              <span class="statistics__block-span">K</span>
+            </div>
+            <hr class="statistics__item-hr">
+            <p class="statistics__item-text">
+              INSTAGRAM
+            </p>
           </div>
-          <div  data-aos="fade-right"   class="statistics__item">
-            <h3 id="statistics__telegram" class="statistics__item-title"></h3><span class="statistics__item-span">K</span>
-            <p class="statistics__item-text">TELEGRAM</p>
+
+          <div class="statistics__item">
+            <div class="statistics__block">
+              <h3 id="statistics__telegram" class="statistics__block-title">105</h3>
+              <span class="statistics__block-span">K</span>
+            </div>
+            <hr class="statistics__item-hr">
+            <p class="statistics__item-text">
+              TELEGRAM
+            </p>
           </div>
-          <div  data-aos="fade-right"  class="statistics__item">
-            <h3 id="statistics__vk" class="statistics__item-title"></h3><span class="statistics__item-span">K</span>
-            <p class="statistics__item-text">VKONTAKTE</p>
+
+          <div class="statistics__item">
+            <div class="statistics__block">
+              <h3 id="statistics__vk" class="statistics__block-title">105</h3>
+              <span class="statistics__block-span">K</span>
+            </div>
+            <hr class="statistics__item-hr">
+            <p class="statistics__item-text">
+              VKONTAKTE
+            </p>
           </div>
-          <div  data-aos="fade-right"   class="statistics__item">
-            <h3 id="statistics__youtube"  class="statistics__item-title"></h3><span class="statistics__item-span">K</span>
-            <p class="statistics__item-text">YOUTUBE</p>
+
+          <div class="statistics__item">
+            <div class="statistics__block">
+              <h3 id="statistics__youtube" class="statistics__block-title">105</h3>
+              <span class="statistics__block-span">K</span>
+            </div>
+            <hr class="statistics__item-hr">
+            <p class="statistics__item-text">
+              YOUTUBE
+            </p>
           </div>
-        
-          <div  data-aos="fade-right"   class="statistics__item statistics__item-last">
-            <h3 id="statistics__result" class="statistics__item-title"></h3><span class="statistics__item-span">K</span></h3>
-            <p class="statistics__item-text">АУДИТОРИЯ ВО ВСЕХ <br> СОЦ.СЕТЯХ</p>
+
+          <div class="statistics__item">
+            <div class="statistics__block">
+              <h3 id="statistics__result" class="statistics__block-title">105</h3>
+              <span class="statistics__block-span">K</span>
+            </div>
+            <hr class="statistics__item-hr">
+            <p class="statistics__item-text">
+              АУДИТОРИЯ ВО ВСЕХ <br> СОЦ.СЕТЯХ
+            </p>
           </div>
-        </div>
-      </div>
+
+       </div>
      
     </section>
     <section  class="section__we-trust we-trust">
@@ -155,11 +189,12 @@
         </a>
       </div>  
     </section>
+     </main>
    <footer class="footer">
     <div data-aos="fade-up" data-aos-duration="1200"  class="footer__item">
       <p class="footer__copyright">COPYRIGHT © 2023</p>
     </div>
-    <div data-aos="fade-left" class="footer__item">
+    <div data-aos="fade-up" class="footer__item">
       <a href="" class="footer__item-link">
         <img src="./img/telegram__footer.svg" alt="" class="footer__item-img">
       </a>
@@ -175,11 +210,14 @@
     </div>
    </footer>
    
-  </main>
+ 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <script type="module" src="./js/script.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+once: true,
+});
   </script> 
   
 
