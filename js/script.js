@@ -1,4 +1,4 @@
-import { CountUp } from "../node_modules/countup.js/dist/countUp.min.js";
+import { CountUp } from "./countUp.min.js";
 console.log(CountUp);
 
 const options = {
