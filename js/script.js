@@ -1,32 +1,29 @@
-import { CountUp } from "./countUp.min.js";
+(function () {
+  let counter = document.querySelectorAll(".counter");
+  let limit = 0; // Переменная, чтобы останавливать функцию, когда всё запустится.
+  window.addEventListener("scroll", function () {
+    if (limit == counter.length) {
+      return;
+    }
 
-const options = {
-  duration: 6.7,
-};
-
-let statistics__instagram = new CountUp("statistics__instagram", 150, {
-  duration: 10.0,
-});
-let statistics__telegram = new CountUp("statistics__telegram", 105, {});
-
-let statistics__vk = new CountUp("statistics__vk", 12, {
-  duration: 10.0,
-});
-let statistics__youtube = new CountUp("statistics__youtube", 5, {
-  duration: 10.0,
-});
-let statistics__result = new CountUp("statistics__result", 280, {
-  duration: 10.0,
-});
-
-if (!statistics__instagram.error) {
-  statistics__instagram.start();
-  statistics__telegram.start();
-  statistics__vk.start();
-  statistics__youtube.start();
-  statistics__result.start();
-} else {
-  console.error(statistics__instagram.error);
-}
-
-// AOS.init();
+    for (let i = 0; i < counter.length; i++) {
+      let pos = counter[i].getBoundingClientRect().top; //Позиция блока, считая сверху окна
+      let win = window.innerHeight - 40; // На 40 пикселей меньше, чем высота окна
+      if (pos < win && counter[i].dataset.stop === "0") {
+        counter[i].dataset.stop = 1; // Останавливаем перезапуск счета в этом блоке
+        let x = 0;
+        limit++; // Счетчик будет запущен, увеличиваем переменную на 1
+        let int = setInterval(function () {
+          // Раз в 60 миллисекунд будет прибавляться 50-я часть нужного числа
+          x = x + Math.ceil(counter[i].dataset.to / 50);
+          counter[i].innerText = x;
+          if (x > counter[i].dataset.to) {
+            //Как только досчитали - стираем интервал.
+            counter[i].innerText = counter[i].dataset.to;
+            clearInterval(int);
+          }
+        }, 60);
+      }
+    }
+  });
+})();

@@ -114,7 +114,7 @@
         <div data-aos-duration="2200" class="statistics__inner">
           <div class="statistics__item">
             <div class="statistics__block">
-              <h3 id="statistics__instagram" class="statistics__block-title">105</h3>
+              <h3   data-to="150" data-stop="0" class="counter  statistics__block-title">105</h3>
               <span class="statistics__block-span">K</span>
             </div>
             <hr class="statistics__item-hr">
@@ -125,7 +125,7 @@
 
           <div class="statistics__item">
             <div class="statistics__block">
-              <h3 id="statistics__telegram" class="statistics__block-title">105</h3>
+              <h3  data-to="105" data-stop="0" class="counter statistics__block-title">105</h3>
               <span class="statistics__block-span">K</span>
             </div>
             <hr class="statistics__item-hr">
@@ -136,7 +136,7 @@
 
           <div class="statistics__item">
             <div class="statistics__block">
-              <h3 id="statistics__vk" class="statistics__block-title">105</h3>
+              <h3  data-to="12" data-stop="0" class="counter statistics__block-title">105</h3>
               <span class="statistics__block-span">K</span>
             </div>
             <hr class="statistics__item-hr">
@@ -147,7 +147,7 @@
 
           <div class="statistics__item">
             <div class="statistics__block">
-              <h3 id="statistics__youtube" class="statistics__block-title">105</h3>
+              <h3  data-to="5" data-stop="0" class="counter statistics__block-title">105</h3>
               <span class="statistics__block-span">K</span>
             </div>
             <hr class="statistics__item-hr">
@@ -158,7 +158,7 @@
 
           <div class="statistics__item">
             <div class="statistics__block">
-              <h3 id="statistics__result" class="statistics__block-title">105</h3>
+              <h3  data-to="280" data-stop="0" class="counter statistics__block-title">105</h3>
               <span class="statistics__block-span">K</span>
             </div>
             <hr class="statistics__item-hr">
@@ -209,14 +209,17 @@
       </a>
     </div>
    </footer>
+
+
    
  
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <script type="module" src="./js/script.js"></script>
-  <script>
+  <script  src="./js/script.js"></script> 
+ <script>
     AOS.init({
-once: true,
+      once: true,
+  disable:'phone',
 });
   </script> 
   
