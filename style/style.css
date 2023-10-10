@@ -53,7 +53,7 @@ justify-content: center;
 
 .intro__item{
 	position: absolute;
-	bottom: 10%;
+	bottom: 20%;
 	width: 100%;
 	max-width: 652px;
 	display: flex;
@@ -70,6 +70,7 @@ justify-content: center;
 	align-items: center;
 	margin-top: 25px;
 	gap: 16px;
+	flex-wrap: wrap;
 }
 
 
@@ -78,6 +79,35 @@ justify-content: center;
 .intro__item-link {
 	font-size: 18px;
 }
+@keyframes arrowAnimation{
+	0% {
+	transform: translateY(0%);
+	
+	}
+ 
+	
+	100% {
+		transform: translateY(30px);
+		
+	}
+ }
+
+
+.intro__arrow{
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+	width: 32px;
+	height: 32px;
+
+	animation-direction: alternate;
+	animation-duration: 2s;
+	animation-name: arrowAnimation;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	
+}
+
 .cooperation{
 	display: flex;
 	justify-content: center;
@@ -292,12 +322,15 @@ gap: 20px;
 	
 	.intro__item{
 		padding: 0 10px;
-		bottom: 38%;
+		bottom: 45%;
 		align-items: center;
 	}
 	.intro__item-img{
-		max-width: 400px;
+		max-width: 500px;
 		object-fit: cover;
+	}
+	.intro__arrow{
+		bottom: 5%;
 	}
 	.cooperation{
 		min-height: 10dvh;
@@ -352,28 +385,22 @@ gap: 20px;
 .section__we-trust {
 	margin-top: 98px;
 }
-.intro__item{
-
-}
 
 .intro__item-img{
-	animation: transform 2s linear ;
+	animation: transform 1s linear ;
 
 }
-.intro__item-ul{	animation: transform 2.5s linear ;
+.intro__item-ul{	animation: transform 1s linear ;
 }
 
 
 @keyframes transform{
 	0% {
-	transform: translateX(-300%);
+	transform: translateX(-100%);
 	opacity: 0;
 	}
  
-	50% {
-		transform: translateX(20%);
-		opacity: .5;
-	}
+	
 
 	100% {
 		transform: translateX(0);
@@ -451,15 +478,21 @@ h3{
 	margin-top: 80px;
 }
 }
-@media (max-width:540px) {
+@media (max-width:580px) {
 	
 	.intro__item-img{
 		max-width: 400px;
-		width: 220px;
+	
 	}
 	.intro__item-link{
-		font-size: 10px;
+		font-size: 12px;
 	}
+	.intro__item-ul {
+		
+		justify-content: center;
+		
+	}
+	
 	
 	.cooperation__link{
 		font-size: 8px;
@@ -541,15 +574,11 @@ padding: 20px 0 50px 0;
 
   }
   .intro__item{
-	bottom: 28%;
+	bottom: 38%;
   }
-  .intro__item-ul{
-	flex-direction: column;
-  }
-  .intro__item-link{
-	font-size: 12px;
-  }
+  
+  
   .cooperation{
-	transform: translateY(-12vh);
+	transform: translateY(-20vh);
   }
 }
