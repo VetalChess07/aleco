@@ -97,9 +97,9 @@ justify-content: center;
 	position: absolute;
 	bottom: 10%;
 	left: 50%;
-	width: 32px;
+	width: 90px;
 	height: 32px;
-
+	transform: rotate(90deg);
 	animation-direction: alternate;
 	animation-duration: 2s;
 	animation-name: arrowAnimation;
@@ -477,6 +477,11 @@ h3{
 .footer {
 	margin-top: 80px;
 }
+.we-trust__item:hover {
+	transform: translateY(0px);
+	
+}
+
 }
 @media (max-width:580px) {
 	
