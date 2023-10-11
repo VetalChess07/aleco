@@ -79,33 +79,22 @@ justify-content: center;
 .intro__item-link {
 	font-size: 18px;
 }
-@keyframes arrowAnimation{
+
+
+
+
+@keyframes transformY{
 	0% {
-	transform: translateY(0%);
-	
+	transform: translateY(300%);
+	opacity: 0;
 	}
  
 	
 	100% {
-		transform: translateY(30px);
-		
+		transform: translateY(0);
+		opacity: 1;
 	}
  }
-
-
-.intro__arrow{
-	position: absolute;
-	bottom: 10%;
-	left: 47%;
-	width: 32px;
-	height: 32px;
-	transform: rotate(90deg);
-	animation-direction: alternate;
-	animation-duration: 2s;
-	animation-name: arrowAnimation;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-}
 
 .cooperation{
 	display: flex;
@@ -114,6 +103,7 @@ justify-content: center;
 	padding: 30px 0;
 	max-width: none;
 margin:  0;
+
 }
 .cooperation__item {
 	padding: 0 10px;
@@ -122,6 +112,7 @@ margin:  0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	gap: 16px 10px;
 }
 .cooperation__link {
 	font-size: 16px;
@@ -321,16 +312,14 @@ gap: 20px;
 	
 	.intro__item{
 		padding: 0 10px;
-		bottom: 45%;
+		bottom: 35%;
 		align-items: center;
 	}
 	.intro__item-img{
 		max-width: 500px;
 		object-fit: cover;
 	}
-	.intro__arrow{
-		bottom: 7%;
-	}
+	
 	.cooperation{
 		min-height: 10dvh;
 		transform: translateY(-20vh);
@@ -338,6 +327,7 @@ gap: 20px;
 	}
 	.cooperation__item {
 		flex-wrap: wrap;
+		align-items: end;
 	}
 	.cooperation__link{
 		font-size: 18px;
@@ -407,18 +397,7 @@ gap: 20px;
 	}
  }
 
- @keyframes transformY{
-	0% {
-	transform: translateY(300%);
-	opacity: 0;
-	}
  
-	
-	100% {
-		transform: translateY(0);
-		opacity: 1;
-	}
- }
 
 .cooperation__link{animation: transformY .8s linear}
 .cooperation__ul{animation: transformY .8s linear}
@@ -493,7 +472,12 @@ h3{
 	}
 	.intro__item-ul {
 		
-		justify-content: center;
+	flex-direction: column;
+
+		
+	}
+	.cooperation__img{
+		width: 15px;
 		
 	}
 	
@@ -560,6 +544,11 @@ margin-top: 30px;
 flex-wrap: wrap-reverse;
 padding: 20px 0 50px 0;
 }
+
+.cooperation {
+	transform: translateY(-14vh);	
+	
+}
 	  
 }
 @media (max-width:480px) {
@@ -577,24 +566,25 @@ padding: 20px 0 50px 0;
 	font-size: 8px;
 
   }
+  .intro__item-img {
+	max-width: 280px;
+}
+
   .intro__item{
 	bottom: 33%;
   }
   
   
-  .cooperation{
-	transform: translateY(-25vh);
-  }
-  @keyframes arrowAnimation{
-	0% {
-	transform: translateY(0%);
-	
-	}
  
+
+
+}
+@media (max-width:272px) {
 	
-	100% {
-		transform: translateY(15px);
-		
-	}
- }
+.cooperation__item{
+	flex-direction: column;
+	align-items: center;
+	transform: translateY(-25px);
+}
+
 }
