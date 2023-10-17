@@ -164,7 +164,7 @@ h3{
 /* Base for label styling */
 [type="checkbox"]:not(:checked),
 [type="checkbox"]:checked {
-position: absolute;
+
 left: 0;
 opacity: 0.01;
 }
