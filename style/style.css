@@ -626,7 +626,7 @@ h3{
 	
 	}
 	.intro__item-link{
-		font-size: 10px;
+		font-size: 14px;
 	}
 	.intro__item-ul {
 		
@@ -638,7 +638,7 @@ h3{
 		
 	        flex-direction: column;
 
-		gap: 8px
+		
 	}
 	
 	
@@ -726,7 +726,7 @@ padding: 20px 0 20px 0;
   }
  
   .intro__item-img {
-	max-width: 230px;
+	max-width: 280px;
 }
 
 

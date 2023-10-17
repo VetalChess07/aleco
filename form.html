@@ -16,67 +16,129 @@
 
       </div>
       <form class="form__item-form">
-        <label class="form__item-label" for="">Что вы умеете лучше всего?</label>
-        
-          <input type="checkbox" id="checkbox1" />
-          <label for="checkbox1">Пишу тексты</label>  
-        
-        
-            <input type="checkbox" id="checkbox2" />
-            <label for="checkbox2">Снимаю видео</label>  
-        
-        
-            <input type="checkbox" id="checkbox3" />
-            <label for="checkbox3">Фотографирую</label>  
-        
-          
-            <input type="checkbox" id="checkbox4" />
-            <label for="checkbox4">Делаю монтаж</label>  
-        
-          
-            <input type="checkbox" id="checkbox5" />
-            <label for="checkbox5">Рисую, работаю с графикой</label>  
-        
-          
-            <input type="checkbox" id="checkbox6" />
-            <label for="checkbox6">Продаю рекламу</label>  
-        
-          
-            <input type="checkbox" id="checkbox7" />
-            <label for="checkbox7">Могу помогать решать любые задачи</label>  
-        
-         
-            <input type="checkbox" id="checkbox8" />
-            <label for="checkbox8">
-              Просто есть идея, хочу поделиться
-              </label>  
-          <label for="input-name">Меня зовут</label>
-          <input placeholder="Ваше имя" id="input-name" type="text">
-          <label for="input-email">Ваш email</label>
-          <input placeholder="Укажите свой email" id="input-email" type="text">
-          <label for="input-tel">Ваш телефон</label>
-          <input placeholder="+7 777 777 77 77" id="input-tel" type="text">
-          <label for="input-tel">Тема, в которой я разбираюсь лучше всех</label>
-          <input placeholder="пример: it, авто, монтаж, мода" id="input-tel" type="text">
-          <label for="input-textarea">
-            Коротко обо мне
+        <h2>Заполните форму!</h2>
+        <div class="form-group">
+          <label>
+              <input type="checkbox" name="coding-notes" class="real-checkbox">
+              <span class="custom-checkbox"></span>
+              Пишу тексты
           </label>
-          <textarea placeholder="Раскажите самое важное о себе: ваши навыки, опыт..." name="" id="input-textarea" cols="30" rows="10"></textarea>
-         
-         
-         
- 
-           
-          
-           <input type="checkbox" id="checkbox-privacy" />
-           <label for="checkbox-privacy">Согласен с политикой конфиденциальности</label>  
-         <a class="privacy__link" href="">политика конфиденциальности</a>
-          
+      </div>
 
-          <input id="input-submit" type="submit" placeholder="Отправить">
+      <div class="form-group">
+          <label>
+              <input type="checkbox" name="travel-notes" class="real-checkbox">
+              <span class="custom-checkbox"></span>
+              Снимаю видео
+          </label>
+      </div>
+      <div class="form-group">
+        <label>
+            <input type="checkbox" name="coding-notes" class="real-checkbox">
+            <span class="custom-checkbox"></span>
+            Фотографирую
+        </label>
+    </div>
+
+    <div class="form-group">
+        <label>
+            <input type="checkbox" name="travel-notes" class="real-checkbox">
+            <span class="custom-checkbox"></span>
+            Делаю монтаж
+        </label>
+    </div>
+    <div class="form-group">
+      <label>
+          <input type="checkbox" name="coding-notes" class="real-checkbox">
+          <span class="custom-checkbox"></span>
+          Рисую, работаю с графикой
+      </label>
+  </div>
+
+  <div class="form-group">
+      <label>
+          <input type="checkbox" name="travel-notes" class="real-checkbox">
+          <span class="custom-checkbox"></span>
+          Продаю рекламу
+      </label>
+  </div>
+  <div class="form-group">
+    <label>
+        <input type="checkbox" name="coding-notes" class="real-checkbox">
+        <span class="custom-checkbox"></span>
+        Могу помогать решать любые задачи
+    </label>
+</div>
+
+<div class="form-group">
+    <label>
+        <input type="checkbox" name="travel-notes" class="real-checkbox">
+        <span class="custom-checkbox"></span>
+        Просто есть идея, хочу поделиться
+    </label>
+</div>
+<div class="form-group">
+  <label>
+      <input type="checkbox" name="coding-notes" class="real-checkbox">
+      <span class="custom-checkbox"></span>
+      Заметки программиста
+  </label>
+</div>
+<div class="form-group">
+  <label for="input-text">
+    Меня зовут
+    <input id="input-text" placeholder="Ваше имя" type="text" name="input-text" class="">
+   
+     
+  </label>
+</div>
+<div class="form-group">
+  <label for="input-email">
+    Электронная почта
+    <input id="input-email" placeholder="Ваш email" type="email" name="input-text" class="">
+   
+     
+  </label>
+</div>
+<div class="form-group">
+  <label for="input-tel">
+    Телефон
+    <input id="input-tel" placeholder="+7 777 777 77 77" type="tel" name="input-text" class="">
+   
+     
+  </label>
+</div>
+<div class="form-group">
+  <label for="input-prof">
+    Тема, в которой вы разбираетесь лучше всех
+    <input id="input-prof" placeholder="пример: it, монтаж, авто, мода" type="text" name="input-text" class="">
+   
+     
+  </label>
+</div>
+<div class="form-group">
+  <label for="input-textarea">
+    Тема, в которой вы разбираетесь лучше всех
+   <textarea id="input-textarea" name="" placeholder="расскажите о вашем опыте, навыках, талантах..." cols="30" rows="10"></textarea>
+     
+  </label>
+</div>
+<div class="form-group">
+  <label>
+      <input type="checkbox" name="coding-notes" class="real-checkbox">
+      <span class="custom-checkbox"></span>
+      политика конфиденциальности
+     <br>
+      <a class="privacy__link" href="">Согласен с политикой конфиденциальности </a>
+    
+  </label>
+</div>
+<input id="input-submit" type="submit">
+<a href="" class="shine-button">Button</a>
 
 
-       
+
+
       </form>
     </div>
   </section>
