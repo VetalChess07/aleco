@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Counter</title>
+	<link rel="stylesheet" href="main.css">
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=8wNkrSna5huFxHBecG1fZ_KPoAm0dqUcFV-ls0cvelmlCszyYMa2yOeUUcapRM8Gq42FF4J4hdmOGylZAtK8GtlLSv4Pv7BF3f9mdmiB2qQq2e5Xf2kGxG6E5gORpOYJ2cwpdUpjjTtKXbT8fYFEutBO1AO91Xn8jAL6fgovlCr5sDzPvfuzsV08BTl6HM3RAcGzidq3nC1-EfLg91EiY6QUPwjCVfyHhC6__XiLnpVWbYcy6j5cloFpad0CfPkA5PmbEXpZe2YuhKgMxulAbKut_XEgiOCEHfRp2oiXmdvg1cO0ZNIyN7jlvTgld5FFgFu533tgetvcMpZ9-2ZIONHhZCzXVXpiLOZ3rCtjrjT38IeOniZ6P2edRYi8aGeqakB1E8WTuoP801_GW9-wRBjpP4WwAfo86c8S3izuuPzBehxpXtSaHxIgpNulseSmItGk0DA74ts0ANB35FXLHrJW3mbBg8Q-XFgp_BREJOh02lcIyopw-j5Tfws8-4YbFvSZkQ6Eq-j_OUjjXr6bfDekZnd_j1Q9flUvyoq10cNstR08isObHfEjEO3CJ0dxd6rn6EQM263lbm4AaRPzd7VG_d5eBjQGsWzDg7Li2pOnpOKyAV_XtUH9LOUos2xCOAQ52ZN1YiaYWKO_3JFG2uQpS4MUD2lU21fOfzheHT2OYmBDpWI6p3CnjsZIdtGzemT9W3QgCrP6yV97kyiJABpQrt0jOqCivi14kRTYOjlZP4KyOlWTmxmgqXGLReWIG2kJQFTyf4Ur-9CeNPqZo-bf61l6XxdwTkSqQad45R7yLWTyEHClauRd4zIO0VQfCHc8pN_EpR-4rFcoFXRW1q_qqgJfH2cytT9rZjYVZijkDCIyj8RwUdlmWK_8C_wOH7d1bpSo-bFp7SI-My4PhODrb9MUiE4-xR_bCuv_kqfSQxKmy8aMncKCK-dray7CjfkGmTela6-bO9d3W1_k1tHKpwGm8T8ilBsdOgh7J1mUWsGqRkw67gse0LY1P8ZMfPg0uamo5TDdiKParP-spLlc018H_wSqyTr194J9zg9FN5B2eUrBpybAEG75R4dS" charset="UTF-8"></script></head>
+<body>
+	  
+	<div class="number" data-max="500">0</div>
+
+	<script>
+		var number = document.querySelector('.number'),
+		numberTop = number.getBoundingClientRect().top,
+		start = +number.innerHTML, end = +number.dataset.max;
+
+		window.addEventListener('scroll', function onScroll() {
+			if(window.pageYOffset > numberTop - window.innerHeight / 2) {
+				this.removeEventListener('scroll', onScroll);
+				var interval = setInterval(function() {
+					number.innerHTML = ++start;
+					if(start == end) {
+						clearInterval(interval);
+					}
+				}, 5);
+			}
+		});
+	</script>
+
+</body>
+</html>
