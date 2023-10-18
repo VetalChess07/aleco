@@ -4,19 +4,22 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>ALEKO</title>
+     <link rel="stylesheet" href="./style/style.css">
    <link rel="stylesheet" href="./style/reset.css">
    <link rel="stylesheet" href="./style/formpage.css">
-</head>
+ 
+  </head>
 <body>
   <section class="section section__form">
     <div class="form">
       <div class="form__item">
         <h1 class="form__item-title">Мы ищем талантов!</h1>
-        <p class="form__item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat.</з>
+        <p class="form__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit voluptatem vitae nobis exercitationem earum tempore a quae. At officiis cum nobis ea eligendi magni vero voluptas laudantium adipisci culpa.</з>
 
       </div>
       <form class="form__item-form">
-        <h2>Заполните форму!</h2>
+        <h2>Заполните форму</h2>
+        <h3 class="form__item-form__title">Что вы умеете лучше всего?</h3>
         <div class="form-group">
           <label>
               <input type="checkbox" name="coding-notes" class="real-checkbox">
@@ -77,14 +80,8 @@
         Просто есть идея, хочу поделиться
     </label>
 </div>
-<div class="form-group">
-  <label>
-      <input type="checkbox" name="coding-notes" class="real-checkbox">
-      <span class="custom-checkbox"></span>
-      Заметки программиста
-  </label>
-</div>
-<div class="form-group">
+
+<div class="form-group form-group-input form-group-input-first">
   <label for="input-text">
     Меня зовут
     <input id="input-text" placeholder="Ваше имя" type="text" name="input-text" class="">
@@ -92,7 +89,7 @@
      
   </label>
 </div>
-<div class="form-group">
+<div class="form-group  form-group-input">
   <label for="input-email">
     Электронная почта
     <input id="input-email" placeholder="Ваш email" type="email" name="input-text" class="">
@@ -100,7 +97,7 @@
      
   </label>
 </div>
-<div class="form-group">
+<div class="form-group  form-group-input">
   <label for="input-tel">
     Телефон
     <input id="input-tel" placeholder="+7 777 777 77 77" type="tel" name="input-text" class="">
@@ -108,7 +105,7 @@
      
   </label>
 </div>
-<div class="form-group">
+<div class="form-group  form-group-input">
   <label for="input-prof">
     Тема, в которой вы разбираетесь лучше всех
     <input id="input-prof" placeholder="пример: it, монтаж, авто, мода" type="text" name="input-text" class="">
@@ -116,25 +113,28 @@
      
   </label>
 </div>
-<div class="form-group">
+<div class="form-group  form-group-input">
   <label for="input-textarea">
     Тема, в которой вы разбираетесь лучше всех
    <textarea id="input-textarea" name="" placeholder="расскажите о вашем опыте, навыках, талантах..." cols="30" rows="10"></textarea>
      
   </label>
 </div>
-<div class="form-group">
+<div class="form-group  form-group-input">
   <label>
       <input type="checkbox" name="coding-notes" class="real-checkbox">
       <span class="custom-checkbox"></span>
-      политика конфиденциальности
+      Согласен с политикой конфиденциальности 
      <br>
-      <a class="privacy__link" href="">Согласен с политикой конфиденциальности </a>
+      <a class="privacy__link" href="">политика конфиденциальности</a>
     
   </label>
 </div>
-<input id="input-submit" type="submit">
-<a href="" class="shine-button">Button</a>
+
+  <input value="Отправить"  id="input-submit" type="submit">
+
+
+
 
 
 
@@ -142,5 +142,29 @@
       </form>
     </div>
   </section>
+  <footer class="footer">
+    <div class="footer__inner">
+      <div data-aos="fade-up" data-aos-duration="1200"  class="footer__item">
+      <p class="footer__copyright">COPYRIGHT © 2023</p>
+    </div>
+   
+    <div data-aos="fade-up" data-aos-duration="1200" class="footer__item">
+      <a target="_blank" href="https://t.me/aleko_n17" class="footer__item-link">
+        <img src="./img/telegram.svg" alt="" class="footer__item-img">
+      </a>
+      <a target="_blank" href="https://vk.com/aleko_n17" class="footer__item-link">
+        <img src="./img/vk 1.png" alt="" class="footer__item-img">
+      </a>
+      <a target="_blank" href=" https://youtube.com/@aleko_n?si=9Vu7d3FLbwcZebR1" class="footer__item-link">
+        <img src="./img/youtube (1) 1.png" alt="" class="footer__item-img">
+      </a>
+      <a target="_blank" href=" https://instagram.com/aleko_n?igshid=MzRlODBiNWFlZA==
+      " class="footer__item-link">
+        <img src="./img/instagram (1) 1.png" alt="" class="footer__item-img">
+      </a>
+    </div>
+    </div>
+    
+   </footer>
 </body>
 </html>
